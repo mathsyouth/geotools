@@ -30,8 +30,8 @@ endfunction()
 ## Eigen
 function(geotools_download_eigen)
 	geotools_download_project(eigen
-		URL           http://bitbucket.org/eigen/eigen/get/3.3.7.tar.gz
-		URL_MD5       f2a417d083fe8ca4b8ed2bc613d20f07
+		GIT_REPOSITORY https://gitlab.com/libeigen/eigen.git
+		GIT_TAG       3.3.9
 	)
 endfunction()
 
@@ -39,22 +39,22 @@ endfunction()
 function(geotools_download_libigl)
 	geotools_download_project(libigl
 		GIT_REPOSITORY https://github.com/libigl/libigl.git
-		GIT_TAG        7895811be45816ba399365a13487305660f152a7
+		GIT_TAG        v2.4.0
 	)
 endfunction()
 
 ## geogram
 function(geotools_download_geogram)
 	geotools_download_project(geogram
-		GIT_REPOSITORY https://github.com/alicevision/geogram.git
-		GIT_TAG        v1.6.9
+		GIT_REPOSITORY https://github.com/BrunoLevy/geogram.git
+		GIT_TAG        v1.8.4
 	)
 endfunction()
 
 # Boost.Compute
 function(geotools_download_compute)
 	geotools_download_project(compute
-		GIT_REPOSITORY https://github.com/boostorg/compute
+		GIT_REPOSITORY https://github.com/boostorg/compute.git
 		GIT_TAG        9189a761b79fcd4be2f38158b9cad164bac22fa2
 	)
 endfunction()
