@@ -35,14 +35,6 @@ function(geotools_download_eigen)
 	)
 endfunction()
 
-## libigl
-function(geotools_download_libigl)
-	geotools_download_project(libigl
-		GIT_REPOSITORY https://github.com/libigl/libigl.git
-		GIT_TAG        v2.4.0
-	)
-endfunction()
-
 ## geogram
 function(geotools_download_geogram)
 	geotools_download_project(geogram
